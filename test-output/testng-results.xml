@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36191" started-at="2020-12-06T18:54:08Z" finished-at="2020-12-06T18:54:44Z">
+  <suite name="Default suite" duration-ms="37563" started-at="2020-12-07T04:00:51Z" finished-at="2020-12-07T04:01:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36191" started-at="2020-12-06T18:54:08Z" finished-at="2020-12-06T18:54:44Z">
-      <class name="com.test.simple.LoginPageTest">
-        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.test.simple.LoginPageTest@527e5409]" name="browserSetup" is-config="true" duration-ms="10856" started-at="2020-12-07T00:24:08Z" finished-at="2020-12-07T00:24:19Z">
+    <test name="Default test" duration-ms="37563" started-at="2020-12-07T04:00:51Z" finished-at="2020-12-07T04:01:28Z">
+      <class name="com.test.simple.AddNewEmployee">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.test.simple.AddNewEmployee@19d37183]" name="browserSetup" is-config="true" duration-ms="15110" started-at="2020-12-07T09:30:51Z" finished-at="2020-12-07T09:31:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="validateLoginPageTitle()[pri:1, instance:com.test.simple.LoginPageTest@527e5409]" name="validateLoginPageTitle" duration-ms="501" started-at="2020-12-07T00:24:19Z" finished-at="2020-12-07T00:24:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginPageTitle -->
-        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.test.simple.LoginPageTest@527e5409]" name="browserSetup" is-config="true" duration-ms="9601" started-at="2020-12-07T00:24:19Z" finished-at="2020-12-07T00:24:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="validateOrnageHrmLogo()[pri:2, instance:com.test.simple.LoginPageTest@527e5409]" name="validateOrnageHrmLogo" duration-ms="79" started-at="2020-12-07T00:24:29Z" finished-at="2020-12-07T00:24:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateOrnageHrmLogo -->
-        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.test.simple.LoginPageTest@527e5409]" name="browserSetup" is-config="true" duration-ms="9824" started-at="2020-12-07T00:24:29Z" finished-at="2020-12-07T00:24:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method status="FAIL" signature="LoginIntoapplication()[pri:3, instance:com.test.simple.LoginPageTest@527e5409]" name="LoginIntoapplication" duration-ms="5222" started-at="2020-12-07T00:24:39Z" finished-at="2020-12-07T00:24:44Z">
-          <exception class="org.junit.ComparisonFailure">
+        <test-method status="FAIL" signature="AddNewEmployee()[pri:1, instance:com.test.simple.AddNewEmployee@19d37183]" name="AddNewEmployee" duration-ms="22315" started-at="2020-12-07T09:31:06Z" finished-at="2020-12-07T09:31:28Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected:<W[ilkommen, Paul]> but was:<W[elcome raj]>]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='resultTable']/tbody/tr/td[3]/a"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1TBL61M', ip: '192.168.15.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51285}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a95424bf3993ad375311b31b083cbf29
+*** Element info: {Using=xpath, value=//*[@id='resultTable']/tbody/tr/td[3]/a}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.junit.ComparisonFailure: expected:<W[ilkommen, Paul]> but was:<W[elcome raj]>
-	at org.junit.Assert.assertEquals(Assert.java:99)
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at com.test.simple.LoginPageTest.LoginIntoapplication(LoginPageTest.java:69)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='resultTable']/tbody/tr/td[3]/a"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1TBL61M', ip: '192.168.15.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51285}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a95424bf3993ad375311b31b083cbf29
+*** Element info: {Using=xpath, value=//*[@id='resultTable']/tbody/tr/td[3]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.test.simple.AddNewEmployee.AddNewEmployee(AddNewEmployee.java:88)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -64,11 +76,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.junit.ComparisonFailure -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginIntoapplication -->
-      </class> <!-- com.test.simple.LoginPageTest -->
+        </test-method> <!-- AddNewEmployee -->
+      </class> <!-- com.test.simple.AddNewEmployee -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
